@@ -1,114 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Pay Fees - CENTRAL CAMPUS OF TECHNOLOGY</title>
+  <title>Pay Fees — Central Campus of Technology</title>
   <link rel="shortcut icon" href="./Images/logo.png" type="image/svg+xml">
-  <link rel="stylesheet" href="./CSS/fees_style.css">
+  <link rel="stylesheet" href="./site.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  
 </head>
-<body>
-  <section class="header">
+
+<body class="form-page">
+
+  <header class="site-header">
     <nav>
-        <a href="./index.html"><img src="./Images/logo-removebg-preview.png" id="logo-img"></a>
-
-        <div class="nav-links" id="navLinks">
-
-            <span class="icon" onclick="hidemenu()">&#10005;</span>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./admission_page.html">Admission</a></li>
-                <li><a href="./index.html#course_call">Course</a></li>
-                <li><a href="./fees_page.html">Fees</a></li>
-                <li><a href="./contact_page.html">Contact</a></li>
-            </ul>
-        </div> 
-        <span class="icon" onclick="showmenu()">&#9776;</span>
+      <a href="./index.html" class="brand">
+        <img src="./Images/logo-removebg-preview.png" alt="Central Campus of Technology logo">
+        <span class="brand-name">Central Campus<span>of Technology</span></span>
+      </a>
+      <button class="menu-icon" onclick="showmenu()" aria-label="Open menu">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <button class="close-icon" onclick="hidemenu()" aria-label="Close menu">&#10005;</button>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./admission_page.html">Admission</a></li>
+          <li><a href="./index.html#course_call">Programs</a></li>
+          <li><a href="./fees_page.html">Fees</a></li>
+          <li><a href="./contact_page.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+  </header>
 
-  <form onsubmit="pay()">
-    <div class="wrapper">
-      <div class="r_form_wrap">
-        
-        <div class="title">
-          <p id="header_fees">Online Pay Fees</p>
-        </div>
-        <div class="r_form">
-          <form method="post" onsubmit="sendmail(); reset(); return false;">
-            <div class="input_wrap">
-
-              
-              <label for="yourname">Course</label>
-              <div class="input_item">
-               
-                  <i class="fa fa-bars" aria-hidden="true"id="icon" ></i>
-                <select id="course" name="cars" class="input" required>
-                <option value="select"> Select the Course</option>
-                <option value="bca" id="bcabatch"> BCA 2021-2022 Batch</option>
-                </select>
-                <br>
-                <br>
-            
-                <label for="yourname">Your UID/Enrollment no</label>
-                <div class="input_item">
-                <i class="fa fa-list-ol" aria-hidden="true"id="icon" ></i>
-                <input type="number"  class="input" id="uid" placeholder="Enter the last two UID digit" >
-              </div>
-            </div>
-            <p id="uid_detail">Ex: FCAB2101101001 to enter the: 01</p>
-            <input type="button" class="button" value="Get" onclick="getInputValue()">
-
-            <br>
-            <br>
-            <div class="input_wrap">
-              <label for="yourname">Student name</label>
-              <div class="input_item">
-                <i class="fa fa-user" id="icon"></i>
-                <p id="demo" class="input" ></p>
-  </div>
-            </div>
-
-                <div class="input_wrap">
-                  <label for="yourname">Pending Fees Detail</label>
-                  <div class="input_item">
-                    <i class="fa fa-credit-card" id="icon"></i>
-                    <p id="demo1" class="input" ></p>
-                  </div>
-                </div>
-
-                
-            <input type="button" class="button" value="Pay Fees" onclick="sendmail()">
-        
-</form>
-</div>
-</div>
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="hero-eyebrow">FEES</p>
+        <h1>Pay your fees online</h1>
+        <p class="hero-lede">Look up your balance with your enrollment UID, then pay directly from here.</p>
+      </div>
     </div>
-  </form>
   </section>
-  
-<div class="none_div">
-</div>
 
+  <div class="form-shell">
+    <div class="form-card">
+      <h2>Online fee payment</h2>
+      <p>Select your batch and enter the last two digits of your UID to pull up your balance.</p>
+
+      <form onsubmit="pay(); return false;">
+
+        <div class="field">
+          <label for="course">Course &amp; batch</label>
+          <div class="field-input">
+            <i class="fa fa-bars"></i>
+            <select id="course" name="cars" required>
+              <option value="select">Select the course</option>
+              <option value="bca" id="bcabatch">BCA 2021&ndash;2022 Batch</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="uid">Your UID / enrollment no.</label>
+          <div class="field-input">
+            <i class="fa fa-list-ol"></i>
+            <input type="number" id="uid" placeholder="Enter the last two UID digits">
+          </div>
+          <p class="field-hint">Ex: FCAB2101101001 &rarr; enter 01</p>
+        </div>
+
+        <div class="form-actions" style="margin-top:0; margin-bottom:26px;">
+          <input type="button" class="btn btn-dark btn-block" value="Look up balance" onclick="getInputValue()">
+        </div>
+
+        <div class="divider-text">Result</div>
+
+        <div class="field">
+          <label>Student name</label>
+          <div class="field-input">
+            <i class="fa fa-user"></i>
+            <p id="demo" class="readout">&nbsp;</p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Pending fees detail</label>
+          <div class="field-input">
+            <i class="fa fa-credit-card"></i>
+            <p id="demo1" class="readout">&nbsp;</p>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <input type="button" class="btn btn-primary btn-block" value="Pay fees" onclick="sendmail()">
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="./main_script.js"></script>
 </body>
-<script src="./main_script.js"></script>
-<script>
-  var navLinks= document.getElementById("navLinks");
 
-function showmenu(){
-    navLinks.style.right="0";
-}   
-function hidemenu(){
-    navLinks.style.right="-200px";
-}
-function sendmail(){
-		Email.send({}).then(
-	message => alert("Thanks you- Team CENTRAL CAMPUS OF TECHNOLOGY")
-);
-}
-</script>
-<script src="./main_script.js"></script>	
 </html>
