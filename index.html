@@ -1,142 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <meta name="description" content="The Central Campus of Technology provides best education required that will prepare you for future endeavour.">
-        <meta name="keywords" content="Central Campus of Technology,Collage">
-        <meta name="author" content="Binary Buddies">
-        <title>CENTRAL CAMPUS OF TECHNOLOGY</title>
-        <link rel="stylesheet" href="./CSS/main_style.css">
-        <link rel="shortcut icon" href="./Images/logo.png" type="image/svg+xml">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Central Campus of Technology provides the education and hands-on training that prepares students for their careers.">
+  <meta name="keywords" content="Central Campus of Technology, College, BIT, BSc CSIT, Nepal">
+  <meta name="author" content="Binary Buddies">
+  <title>Central Campus of Technology</title>
+  <link rel="stylesheet" href="./site.css">
+  <link rel="shortcut icon" href="./Images/logo.png" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
 <body>
-    <section class="header">
-        <nav>
-            <a href="./index.html"><img src="./Images/logo-removebg-preview.png" id="logo-img"></a>
-            <div class="nav-links" id="navLinks">
-                <span class="icon" onclick="hidemenu()">&#10005;</span>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./admission_page.html">Admission</a></li>
-                    <li><a href="#course_call">Course</a></li>
-                    <li><a href="./fees_page.html">Fees</a></li>
-                    <li><a href="./contact_page.html">Contact</a></li>
-                </ul>
-            </div> 
-            <span class="icon" onclick="showmenu()">&#9776;</span>
-        </nav>
 
-        <div class="text-box">
-            <h1>Central Campus of Technology</h1>
-            <p>The Central Campus of Technology provides best education<br>required that will prepare you for future endeavour.</p>
-            <a href="./admission_page.html" class="hero-btn">Admission Open</a>
+  <header class="site-header">
+    <nav>
+      <a href="./index.html" class="brand">
+        <img src="./Images/logo-removebg-preview.png" alt="Central Campus of Technology logo">
+        <span class="brand-name">Central Campus<span>of Technology</span></span>
+      </a>
+      <button class="menu-icon" onclick="showmenu()" aria-label="Open menu">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <button class="close-icon" onclick="hidemenu()" aria-label="Close menu">&#10005;</button>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./admission_page.html">Admission</a></li>
+          <li><a href="#course_call">Programs</a></li>
+          <li><a href="./fees_page.html">Fees</a></li>
+          <li><a href="./contact_page.html">Contact</a></li>
+          <li><a href="./admission_page.html" class="is-cta">Apply now</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="hero-eyebrow">CENTRAL CAMPUS OF TECHNOLOGY</p>
+        <h1>Education built for where technology is headed.</h1>
+        <p class="hero-lede">Six degree programs across computing, science, food technology and nutrition — taught by faculty who prepare you for the work waiting after graduation.</p>
+        <div class="hero-actions">
+          <a href="./admission_page.html" class="btn btn-primary">Start your application</a>
+          <a href="#course_call" class="btn btn-ghost">See the programs</a>
         </div>
-    </section>
+      </div>
+      <div class="hero-facts">
+        <div class="hero-fact"><b>6</b><span>Degree programs offered</span></div>
+        <div class="hero-fact"><b>200</b><span>Seat auditorium on campus</span></div>
+        <div class="hero-fact"><b>4&ndash;8</b><span>Years across bachelor's &amp; master's tracks</span></div>
+      </div>
+    </div>
+  </section>
 
-    <section class="course" id="course_call">
-        <h1>Course We Offer</h1>
-        <p>We will offer six courses for student by Central Campus of Technology</p>
+  <section class="section" id="course_call">
+    <div class="container">
+      <div class="section-head">
+        <div class="rule"></div>
+        <p class="section-tag">Programs</p>
+        <h2>Six programs, one campus.</h2>
+        <p>Every course below runs on-site, with lab access and faculty office hours built into the week.</p>
+      </div>
 
-        <div class="row">
-            <div class="course-col">
-                <h2>BIT</h2>
-                <p>The BIT course is a full time four years (eight semesters) 
-                    Bachelor’s Degree in Information Technology.This degree is primarily 
-                    focused on subjects such as software, databases, and networking.</p>
-            </div>
-
-            <div class="course-col">
-                <h2>B.Sc.</h2>
-                <p>The B.Sc. course is a full time four years Bachelor’s Degree in Science. 
-                    This degree is primarily focused on subjects such as Physics & Biology.</p>
-            </div>
-
-            <div class="course-col">
-                <h2>BSC.CSIT</h2>
-                <p>The BSC.CSIT course is a full time four years (eight semesters) Bachelor’s Degree in Computer Science & Information Technology.
-                    This degree is primarily focused on subjects such as software, databases, and networking. Same as BIT.</p>
-            </div>
-
-            <div class="course-col">
-                <h2>B.Tech(Food)</h2>
-                <p>The B.Tech(Food) course is a full time four years Bachelor’s Degree in Food Technology.
-                    This degree is primarily focused on subjects food science.</p>
-            </div>
-
-            <div class="course-col">
-                <h2>B.Sc.Nutrition and Dietetics</h2>
-                <p>The B.Sc.Nutrition and Dietetics course is a full time four years (eight semesters) Bachelor’s Degree in science of 
-                    Nutrition and Dietetics.This degree is primarily focused on subjects Nutrition and Dietetics.</p>
-            </div>
-
-            <div class="course-col">
-                <h2>M.Sc.(Microbiology)</h2>
-                <p>The M.Sc.(Microbiology) course is a full time four semesters Master of Science of Microbiology.
-                    This degree is primarily focused on subjects such as software, databases, and networking.</p>
-            </div>
-        </div></p>
-    </section>
-    
-    <section class="campus">
-        <h1>Our Campus</h1>
-        <p>It is a place where students can learn and grow.</p>
-        <div class="row1">
-            <div class="campus-col">
-                <img src="./Images/environment.jpg">
-                <div class="layer">
-                    <h3>Environment</h3>
-                </div>
-            </div>
-
-            <div class="campus-col">
-                <img src="././Images/cctimg4.jpg">
-                <div class="layer">
-                    <h3>Community</h3>
-                </div>
-            </div>
-
-            <div class="campus-col">
-                <img src="./Images/cctimg5.jpg">
-                <div class="layer">
-                    <h3>Education</h3>
-                </div>
-            </div>
+      <div class="catalog">
+        <div class="catalog-row">
+          <div class="catalog-code">BIT</div>
+          <div class="catalog-body">
+            <h3>Bachelor of Information Technology</h3>
+            <p>A software-first degree covering programming, databases and networking, with project work that mirrors how development teams actually operate.</p>
+          </div>
+          <div class="catalog-meta">4 yrs · 8 sem</div>
         </div>
-    </section>
 
-    <section class="facilities">
-        <h1> Our facilities</h1>
-        <p>Facilities provide for Students by Central Campus of Technology</p>
-
-        <div class="row2">
-            <div class="facilities-col">
-                <img src="./Images/canteen.jpeg" alt="">
-                <h3>Canteen</h3>
-                <p>The objective of the Canteen and meal service is to protect by reducing the risk of foodborne illness, with proper sanitary conditions.</p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="./Images/Auditorium.jpg" alt="">
-                <h3>Auditorium</h3>
-                <p>The college is having a huge indoor auditorium with a professionally-deployed acoustic system and a seating capacity of about 200 people.</p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="./Images/Hostel.jpg" alt="">
-                <h3>Hostel</h3>
-                <p>hostel consists of a separate mess, administrative office, warden quarter. In addition to well furnished rooms.</p>
-            </div>
+        <div class="catalog-row">
+          <div class="catalog-code">B.Sc.</div>
+          <div class="catalog-body">
+            <h3>Bachelor of Science</h3>
+            <p>A foundation in physics and biology for students building toward research, health sciences or further specialization.</p>
+          </div>
+          <div class="catalog-meta">4 yrs</div>
         </div>
-    </section>
 
-    <section class="ctn">
-        <h1> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1>
-    </section>
+        <div class="catalog-row">
+          <div class="catalog-code">CSIT</div>
+          <div class="catalog-body">
+            <h3>B.Sc. Computer Science &amp; Information Technology</h3>
+            <p>Software, databases and networking with a heavier theoretical core than BIT — for students aiming at further study or research-oriented software roles.</p>
+          </div>
+          <div class="catalog-meta">4 yrs · 8 sem</div>
+        </div>
 
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>The Central Campus of Technology provides best education required that will prepare you for future endeavour.</p>
-            <p id="copyright">Made By &#10084; Binary Buddies</p>
-         </section>
-</body>  
+        <div class="catalog-row">
+          <div class="catalog-code">B.Tech</div>
+          <div class="catalog-body">
+            <h3>B.Tech in Food Technology</h3>
+            <p>Food science from processing to safety standards, for students headed into food production, quality control or product development.</p>
+          </div>
+          <div class="catalog-meta">4 yrs</div>
+        </div>
+
+        <div class="catalog-row">
+          <div class="catalog-code">B.Sc.ND</div>
+          <div class="catalog-body">
+            <h3>B.Sc. Nutrition &amp; Dietetics</h3>
+            <p>The science of nutrition and clinical dietetics, preparing graduates for hospital, community and food-industry nutrition roles.</p>
+          </div>
+          <div class="catalog-meta">4 yrs · 8 sem</div>
+        </div>
+
+        <div class="catalog-row">
+          <div class="catalog-code">M.Sc.</div>
+          <div class="catalog-body">
+            <h3>M.Sc. in Microbiology</h3>
+            <p>Graduate-level study of microorganisms, immunology and lab technique for students moving into research or diagnostic careers.</p>
+          </div>
+          <div class="catalog-meta">2 yrs · 4 sem</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section on-dark">
+    <div class="container">
+      <div class="section-head">
+        <div class="rule"></div>
+        <p class="section-tag">Campus</p>
+        <h2>A place to learn and grow.</h2>
+      </div>
+      <div class="campus-grid">
+        <div class="campus-tile">
+          <img src="./Images/environment.jpg" alt="Campus environment">
+          <div class="campus-label">Environment<span>Grounds &amp; classrooms</span></div>
+        </div>
+        <div class="campus-tile">
+          <img src="./Images/cctimg4.jpg" alt="Campus community">
+          <div class="campus-label">Community<span>Student life</span></div>
+        </div>
+        <div class="campus-tile">
+          <img src="./Images/cctimg5.jpg" alt="Campus education">
+          <div class="campus-label">Education<span>Labs &amp; lectures</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="rule"></div>
+        <p class="section-tag">Facilities</p>
+        <h2>What's on campus.</h2>
+      </div>
+      <div class="facilities-grid">
+        <div class="facility">
+          <img src="./Images/canteen.jpeg" alt="Canteen">
+          <h3>Canteen</h3>
+          <p>A meal service run to proper sanitary standards, so lowering the risk of foodborne illness is built into how it operates, not an afterthought.</p>
+        </div>
+        <div class="facility">
+          <img src="./Images/Auditorium.jpg" alt="Auditorium">
+          <h3>Auditorium</h3>
+          <p>An indoor auditorium seating around 200, fitted with a professionally deployed acoustic system for lectures, events and ceremonies.</p>
+        </div>
+        <div class="facility">
+          <img src="./Images/Hostel.jpg" alt="Hostel">
+          <h3>Hostel</h3>
+          <p>Furnished rooms alongside a dedicated mess, administrative office and warden's quarters, for students living on campus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Admissions are open for the upcoming intake.</h2>
+        <a href="./admission_page.html" class="btn btn-primary">Apply now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Central Campus of Technology</h4>
+          <p>Education built to prepare students for the work waiting after graduation, across computing, science and food &amp; nutrition sciences.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./admission_page.html">Admission</a></li>
+            <li><a href="./index.html#course_call">Programs</a></li>
+            <li><a href="./fees_page.html">Fees</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="./contact_page.html">Get in touch</a></li>
+            <li>[Campus address]</li>
+            <li>[Phone number]</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Central Campus of Technology.</p>
+        <p>Made with <span>&#10084;</span> by Binary Buddies</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main_script.js"></script>
+</body>
 </html>
